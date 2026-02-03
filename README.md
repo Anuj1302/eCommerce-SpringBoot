@@ -1,18 +1,23 @@
-# Maven
-/target
-/.mvn/wrapper/maven-wrapper.jar
+# E-Commerce Backend (Spring Boot)
 
-# Logs
-*.log
+## Tech Stack
+- Spring Boot
+- Spring Security (JWT)
+- MySQL
+- JPA / Hibernate
 
-# Environment files
-.env
+## Features
+- JWT Authentication with Refresh Tokens
+- Role-based Authorization (Admin/User)
+- Product & Category Management
+- Secure REST APIs
 
-# IDE
-.idea/
-*.iml
-.vscode/
+## Security
+- HttpOnly Refresh Tokens
+- Short-lived Access Tokens
+- Role enforcement at API level
 
-# OS
-.DS_Store
-Thumbs.db
+## Run locally
+1. Create `application.properties`
+2. Add DB & JWT secrets
+3. Run `mvn spring-boot:run`
